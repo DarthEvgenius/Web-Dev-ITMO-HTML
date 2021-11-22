@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Самостоятельная 3.1</title>
+</head>
+<body>
+	<h1>Продажа квартир КВАДРИТО</h1>
+	<p><font size="5">Заполните форму ниже о квартире, которую хотите выставить на продажу:</font></p>
+	<form action="#" method="post">
+		<table cellspacing="10px">
+			<tr>
+				<td><strong>Город</strong></td>
+				<td>
+					<select name="city">
+						<option value="-1">Выберете город для продажи_____________________</option>
+						<option value="0">Москва</option>
+						<option value="1">Санкт-Петербург</option>
+						<option value="2">Новосибирск</option>
+						<option value="3">Воронеж</option>
+						<option value="4">Вологда</option>
+						<option value="5">Магадан</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><strong>Материал здания</strong></td>
+				<td>
+					<input type="checkbox" name="type_material" value="0">Кирпич<br>
+					<input type="checkbox" name="type_material" value="1">Блоки<br>
+					<input type="checkbox" name="type_material" value="2">Монолит<br>
+					<input type="checkbox" name="type_material" value="3">Панель<br>
+					<input type="checkbox" name="type_material" value="4">Дерево
+				</td>
+			</tr>
+			<tr>
+				<td><strong>Общая площадь (м&sup2;)</strong></td>
+				<td>
+					<input type="text" size="21" placeholder="от" name="baic_m_start">
+					<input type="text" size="21" placeholder="до" name="basic_m_end">
+				</td>
+			</tr>
+			<tr>
+				<td><strong>Площадь кухни (м&sup2;)</strong></td>
+				<td>
+					<input type="text" size="21" placeholder="от" name="kitchen_m_start">
+					<input type="text" size="21" placeholder="до" name="kitchen_m_end">
+				</td>
+			</tr>
+			<tr>
+				<td><strong>Жилая площадь (м&sup2;)</strong></td>
+				<td>
+					<input type="text" size="21" placeholder="от" name="live_m_start">
+					<input type="text" size="21" placeholder="до" name="live_m_end">
+				</td>
+			</tr>
+			<tr>
+				<td><strong>Год постройки</strong></td>
+				<td>
+					<input type="text" size="21" placeholder="от" name="years_start">
+					<input type="text" size="21" placeholder="до" name="years_end">
+				</td>
+			</tr>
+			<tr>
+				<td><strong>Этаж</strong></td>
+				<td>
+					<input type="text" size="21" placeholder="от" name="level_start">
+					<input type="text" size="21" placeholder="до" name="level_end"><br>
+					Не последний<input type="checkbox" name="not_end">
+				</td>
+			</tr>
+			<tr>
+				<td><strong>Этажей в доме</strong></td>
+				<td>
+					<input type="text" size="21" placeholder="от" name="level_m_start">
+					<input type="text" size="21" placeholder="до" name="level_m_end">
+				</td>
+			</tr>
+			<tr>
+				<td><strong>До метро (по карте)</strong></td>
+				<td>
+					<select name="distance">
+						<option value="-1">Выберете расстояние__________________________</option>
+						<option value="500m">До 7 мин. пешком (до 500 м.)</option>
+						<option value="1000m">До 15 мин. пешком (до 1 км.)</option>
+						<option value="1500m">До 21 мин. пешком (до 1.5 км.)</option>
+						<option value="3000m">До 40 мин. пешком (до 3 км.)</option>
+						<option value="5000m">До 1 часа пешком (до 5 км.)</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><strong>Продавец</strong></td>
+				<td>
+					<input type="radio" name="saler" value="0">Не важно<br>
+					<input type="radio" name="saler" value="1">Агентсво<br>
+					<input type="radio" name="saler" value="2">Собственник
+				</td>
+			</tr>
+			<tr>
+				<td><input type="submit" value="Показать предложения"></td>
+				<td><input type="reset" value="Сбросить фильтры "></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
