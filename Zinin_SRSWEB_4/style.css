@@ -1,0 +1,22 @@
+div {
+	width: 500px;
+	border: green solid 1px;
+	padding: 20px;
+	margin: 0;
+	text-align: justify;
+}
+
+.header {
+	color: blue;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+span {
+	font-style: italic;
+}
+
+#anchor {
+	color: green;
+	font-weight: bold;
+}
