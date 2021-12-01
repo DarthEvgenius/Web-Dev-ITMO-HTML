@@ -54,7 +54,7 @@ img	{
 	display: flex;
     justify-content: center;
     align-items: center; 
-    padding: 15px;
+    border: 20px solid black;
 }
 
 .concerts p,
