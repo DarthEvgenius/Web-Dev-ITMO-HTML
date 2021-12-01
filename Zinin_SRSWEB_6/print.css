@@ -1,0 +1,136 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: teal;
+}
+
+.container {
+	width: 950px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #ccc;
+}
+
+main {
+	background-color: #ccc;
+}
+
+.rightSide {
+	float: right;
+	width: 200px;
+}
+
+.rightSide ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 15px;
+}
+
+.rightSide ul > li > a {
+	display: block;
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	border: 1px solid #fefefe;
+	padding: 15px 30px;
+	text-align: center;
+}
+
+article {
+	width: 748px;
+	height: auto;
+	float: left;
+	border-left: 1px solid #fefefe;
+	border-right: 1px solid #fefefe;
+	padding-bottom: 15px;
+	counter-reset: list 0;
+}
+
+section {
+	margin-bottom: 72px;
+	padding-left: 15px;
+	padding-right: 30px;
+}
+
+section:first-child>h3 {
+	margin-top: 0;
+	padding-top: 30px;
+}
+
+section > h3 > span:before {
+	counter-increment: list;
+	content: "Статья " counter(list) ": ";
+}
+
+section a {
+	display: inline-block;
+	text-align: center;
+	float: right;
+	background-color: red;
+	padding: 10px 18px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.clearing {
+	clear: both;
+	height: 200px;
+}
+
+footer {
+	border-top: 5px solid blue;
+	width: 950px;
+	height: 195px;
+	margin-top: -200px;
+}
+
+.firstMenu,
+.centerMenu,
+.rightMenu {
+	display: block;
+	padding-top: 25px;
+}
+
+.firstMenu {
+	float: left;
+	width: 250px;
+	margin-left: 50px;
+}
+
+.rightMenu {
+	float: right;
+	width: 250px;
+	margin-right: 50px;
+}
+
+.centerMenu {
+	float: left;
+	width: 250px;
+	margin-left: 50px;
+}
+
+footer nav ul a {
+	text-decoration: none;
+	color: black;
+}
+
+footer nav p {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+@media print {
+	main {
+		background-color: lime;
+	}
+
+	footer {
+		visibility: hidden;
+	}
+
+	main article section:nth-child(4) {
+		page-break-inside: avoid;
+	}
+}

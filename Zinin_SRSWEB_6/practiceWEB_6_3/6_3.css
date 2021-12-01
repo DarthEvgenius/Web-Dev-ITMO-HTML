@@ -1,0 +1,55 @@
+@import url("bootstrap.css");
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	color: yellow;
+	background-color: #000;
+}
+
+p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+img	{
+	max-width: 100%;
+}
+
+.header {
+	padding: 0;
+	text-align: center;
+}
+
+.concerts {
+	background: url(4.jpg) no-repeat center;
+	background-size: cover;
+}
+
+.albums {
+	background: url(5.jpg) no-repeat top;
+	background-size: cover;
+}
+
+.concerts,
+.albums {
+	min-height: 400px;
+	display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.concerts p,
+.albums p {
+	 font-size: 40px;
+}
