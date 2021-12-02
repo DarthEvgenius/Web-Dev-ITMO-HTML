@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+	<title>Задание 7.6</title>
+	<style type="text/css">
+		html {
+			font-size: 16px;
+		}
+
+		ul {
+			padding: 0;
+			text-align: center;
+		}
+
+		li {
+			list-style-type: none;
+			color: black;
+			font-size: 1.5rem;
+			display: inline-block;
+			text-align: center;
+			padding: 0 25px;
+			text-decoration: none;
+		}
+
+		li:hover {
+			color: blue;
+			cursor: pointer;
+		}
+
+		li:hover i {
+			color: black;
+		}
+
+/*далее поменял !important из примера задания на класс элемента, вроде работает так же!*/
+		.fab {
+			display: block;
+			font-size: 3rem;
+			color: blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Title</h1>
+	<!-- в задании написано "нумерованный список ul"... -->
+	<ul>
+		<li><i class="fab fa-node-js"></i>NodeJS</li>
+		<li><i class="fab fa-angular"></i>Angular</li>
+		<li><i class="fab fa-aws"></i>AWS</li>
+		<li><i class="fab fa-cc-apple-pay"></i>ApplePay</li>
+		<li><i class="fab fa-cc-paypal"></i>PayPal</li>
+	</ul>
+</body>
+</html>
