@@ -1,0 +1,76 @@
+body {
+	/*фон документа*/
+	background-color: #cecece;
+	/*обнуляем отступы body*/
+	padding: 0;
+}
+
+div {
+	/*ширина, при этом параграфы тоже ужимаются, из-за контейнера*/
+	width: 40px;
+	/*высота*/
+	height: 40px;
+	/*позиционирование элемента относительно того, где он должен быть в принципе, позволяет использовать следующее свойство left*/
+	position: relative;
+	/*благодаря position: relative можно использовать сдвиг от левой стороны свойством left*/
+	left: 10px;
+	/*задаём время исполнения анимаций для всех div, обращаясь в свойству left*/
+	transition: left 1s;
+}
+
+.container {
+	/*выставляем ширину контейнера 100%, и абзацы снова в одну строчку, ибо остальные div пустые, она не ограничивают р*/
+	width: 100%;
+	/*высота контейнера тоже 100%, но отступы всё равно есть из-за отступов р*/
+	height: 100%;
+}
+
+.container:hover div {
+	/*при присутствии указателя мыши внутри контейнера div внутри него сдвигаются вправо в течение 1 сек. Забавно, что они без контента, и этого всё равно не видно. хотя, если поставить границу, то оно как бы работает.*/
+	left: 500px;
+}
+
+/*далее мы делаем все div видимыми с помощью фона*/
+.ease {
+	background-color: blue;
+	/*задаём стиль анимации: медленно начало и конец*/
+	transition-timing-function: ease;
+}
+
+.linear {
+	background-color: lime;
+	/*задаём стиль анимации: ровная скорость*/
+	transition-timing-function: linear;
+	/*откладываем исполнение анимации на 1 сек*/
+	transition-delay: 1s;
+}
+
+.ease-in {
+	background-color: mediumaquamarine;
+	/*задаём стиль анимации: медленное начало*/
+	transition-timing-function: ease-in;
+	/*откладываем исполнение анимации на 2 сек*/
+	transition-delay: 2s;
+}
+
+.ease-out{
+	background-color: orangered;
+	/*задаём стиль анимации: медленный конец*/
+	transition-timing-function: ease-out;
+	/*откладываем исполнение анимации на 3 сек*/
+	transition-delay: 3s;
+}
+
+.ease-in-out {
+	background-color: darkviolet;
+	/*задаём стиль анимации: также, как первая, но более медленно по краям*/
+	transition-timing-function: ease-in-out;
+	/*откладываем исполнение анимации на 4 сек*/
+	transition-delay: 4s;
+}
+
+.cubic-bezier {
+	background-color: darkviolet;
+	/*очень классный эффект с возвратом в конце анимации!*/
+	transition-timing-function: cubic-bezier(.23, .33, .05, 1.18);
+}

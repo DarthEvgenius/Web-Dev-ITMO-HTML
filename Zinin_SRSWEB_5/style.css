@@ -1,0 +1,54 @@
+body,
+html {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	font-size: 20px;
+	margin: 0;
+	padding: 15px;
+}
+
+.container {
+	width: 1000px;
+	background-color: #9acd32;
+	margin: 0 auto;
+	border-left: 2px solid blue;
+	border-right: 2px solid blue;
+}
+
+header,
+footer {
+	height: 100px;
+	margin: 0;
+}
+
+main {
+	background-color: #f5f5dc;
+}
+
+.leftSide {
+	float: left;
+	width: 220px;
+}
+
+
+.rightSide {
+	float: right;
+	width: 220px;
+}
+
+
+section {
+	background-color: #ffffff;
+	height: 400px;
+	margin: 0 220px;
+}
+
+main:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
