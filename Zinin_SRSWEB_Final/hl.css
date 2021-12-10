@@ -1,3 +1,5 @@
+
+/*------------------------------------------------ Обнуление*/
 *,
 *:before,
 *:after {
@@ -5,12 +7,23 @@
 	margin: 0;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+li {
+	list-style: none;
+}
+
+/*------------------------------------------------ Общее*/
 html,
 body {
 	height: 100%;
 	line-height: 1;
 	font-size: 16px;
 	color: black;
+	background-color: #3A3A3A;
 }
 
 .wrapper {
@@ -19,6 +32,59 @@ body {
 }
 
 .container {
-	max-width: 1046px;
+	max-width: 1100px;
 	margin: 0 auto;
+}
+
+/*------------------------------------------------ Шапка*/
+header {
+	background-color: #181818;
+	color: #B45A16;
+}
+
+
+.header {
+	display: inline-block;
+}
+
+.header_logo {
+	max-width: 10%;
+	float: left;
+	transition: transform 2s;
+}
+
+.header_logo:hover {
+	transform: rotateY(360deg);
+}
+
+header:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+h1 {
+	text-align: center;
+	padding: 10px;
+}
+
+ul {
+	text-align: center;
+}
+
+li {
+	display: inline-block;
+	text-align: center;
+	padding: 0 20px 0;
+}
+
+@keyframes hover {
+	to {font-size: 20px;}
+}
+
+li:hover {
+	background-color: #F4D316;
+	color: #000;
+	animation: hover 1s;
+	animation-fill-mode: forwards;
 }
