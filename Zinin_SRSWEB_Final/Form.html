@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>А ты играл в Half-Life?</title>
+	<link rel="stylesheet" href="hl.css">
+</head>
+<body>
+	<h4>А что ты расскажешь про Half-Life?</h4>
+	<form action="#" method="get">
+		<fieldset>
+			<legend>Я играл в:</legend>
+			<div class="form">
+				<input tabindex="1"type="checkbox" name="hl1" value="hl1">Half-Life 1
+			</div>
+			<div class="form">
+				<input tabindex="2" type="checkbox" name="hl2" value="hl2">Half-Life 2
+			</div>
+			<div class="form">
+				<input tabindex="3" type="checkbox" name="opposing" value="opposing">Half-Life: Opposing Force
+			</div>
+			<div class="form">
+				<input tabindex="4" type="checkbox" name="blue" value="blue">Half-Life: Blue Shift
+			</div>
+			<div class="form">
+				<input tabindex="5" type="checkbox" name="ep1" value="ep1">Half-Life 2: Episode 1
+			</div>
+			<div class="form">
+				<input tabindex="6" type="checkbox" name="ep2" value="ep2">Half-Life 2: Episode 2
+			</div>
+			<div class="form">
+				<input tabindex="7" type="checkbox" name="cs" value="cs">Counter-Strike
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Есть ли у тебя профиль в Steam?</legend>
+			<div class="form">	
+				<input tabindex="8" type="radio" checked name="steam_profile" value="yes">Да
+			</div>
+			<div class="form">
+				<input tabindex="8" type="radio" name="steam_profile" value="no">Нет
+			</div>
+		</fieldset>
+		<fieldset>
+			<legend>Любимая часть игры:</legend>
+			<div class="form">	
+				<select tabindex="9" name="favorite_game">
+					<option value="hl">Half-Life</option>
+					<option value="Opposing">Opposing Force</option>
+					<option value="Blue">Blue Shift</option>
+					<option value="hl2">Half-Life 2</option>
+					<option value="ep1">Half-Life 2: Episode 1</option>
+					<option value="ep2">Half-Life 2: Episode 2</option>
+				</select>
+			</div>			
+		</fieldset>
+		<fieldset>
+			<legend>Какие-нибудь мысли по поводу 3 части?</legend>
+			<textarea tabindex="10" rows="4" cols="50" name="dreams"></textarea>
+		</fieldset>
+		<input tabindex="11" type="submit" value="Отправить">
+		<input tabindex="12" type="reset" value="Очистить форму">		
+	</form>
+</body>
+</html>
